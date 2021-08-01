@@ -1,4 +1,4 @@
-import Relay from 'react-relay';
+import Relay from 'react-relay/classic';
 
 export default function prepareInitialRender(props) {
   return new Promise(resolve => {
@@ -9,7 +9,7 @@ export default function prepareInitialRender(props) {
     function onReadyStateChange(readyState) {
       if (readyState.aborted || readyState.error || readyState.ready) {
         request.abort();
-        
+
         resolve({
           ...props,
           initialReadyState: readyState,
