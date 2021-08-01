@@ -27,7 +27,8 @@
   },
   "scripts": {
     "build": "babel src --out-dir lib",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "prepare": "npm run prepublish"
   },
   "dependencies": {
     "babel-runtime": "^6.6.1"
