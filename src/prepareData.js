@@ -1,5 +1,5 @@
 import Relay from 'react-relay/classic';
-import toGraphQL from 'react-relay/lib/toGraphQL';
+import { toGraphQL } from 'react-relay/classic';
 
 export default function prepareData(
   { Container, queryConfig },

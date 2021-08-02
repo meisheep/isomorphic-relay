@@ -1,4 +1,4 @@
-import fromGraphQL from 'react-relay/lib/fromGraphQL';
+import { fromGraphQL } from 'react-relay/classic';
 
 export default function injectPreparedData(environment, data) {
   const storeData = environment.getStoreData();
