@@ -6,6 +6,7 @@
   ],
   "plugins": [
     ["transform-es2015-classes", { "loose": true }],
-    "transform-runtime"
+    "transform-runtime",
+    "relay"
   ]
 }
